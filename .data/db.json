@@ -1,0 +1,652 @@
+{
+  "runs": {
+    "0428ba0d-2beb-4188-b8da-314153cd4982": {
+      "error": false,
+      "dataset_summary": {
+        "total_reviews": 460,
+        "duplicates_removed": 40,
+        "date_range": {
+          "start": "2025-01-01",
+          "end": "2025-03-28"
+        },
+        "restaurants": 2,
+        "validation": {
+          "valid": true,
+          "errors": [],
+          "warnings": []
+        }
+      },
+      "sentiment": {
+        "overall_avg": 0.334,
+        "overall_std": 0.427,
+        "positive_pct": 72,
+        "negative_pct": 25,
+        "neutral_pct": 3,
+        "avg_rating": 3.75,
+        "rating_std": 1.06,
+        "rating_distribution": {
+          "1": 7,
+          "2": 4,
+          "3": 13,
+          "4": 25,
+          "5": 11
+        }
+      },
+      "reputation_momentum": -17.6,
+      "trends": {
+        "monthly_trends": [
+          {
+            "period": "2025-01",
+            "avg_rating": 4.19,
+            "avg_sentiment": 0.467,
+            "review_count": 154,
+            "median_rating": 4.3
+          },
+          {
+            "period": "2025-02",
+            "avg_rating": 4.03,
+            "avg_sentiment": 0.431,
+            "review_count": 144,
+            "median_rating": 4.2
+          },
+          {
+            "period": "2025-03",
+            "avg_rating": 3.09,
+            "avg_sentiment": 0.12,
+            "review_count": 162,
+            "median_rating": 3.5
+          }
+        ],
+        "day_of_week_trends": [
+          {
+            "day": "Monday",
+            "avg_rating": 3.8,
+            "avg_sentiment": 0.351,
+            "review_count": 64
+          },
+          {
+            "day": "Tuesday",
+            "avg_rating": 3.82,
+            "avg_sentiment": 0.351,
+            "review_count": 60
+          },
+          {
+            "day": "Wednesday",
+            "avg_rating": 3.76,
+            "avg_sentiment": 0.317,
+            "review_count": 81
+          },
+          {
+            "day": "Thursday",
+            "avg_rating": 3.81,
+            "avg_sentiment": 0.317,
+            "review_count": 65
+          },
+          {
+            "day": "Friday",
+            "avg_rating": 3.67,
+            "avg_sentiment": 0.314,
+            "review_count": 66
+          },
+          {
+            "day": "Saturday",
+            "avg_rating": 3.67,
+            "avg_sentiment": 0.341,
+            "review_count": 58
+          },
+          {
+            "day": "Sunday",
+            "avg_rating": 3.72,
+            "avg_sentiment": 0.351,
+            "review_count": 66
+          }
+        ],
+        "trend_direction": "declining",
+        "trend_slope": -0.55
+      },
+      "topics": [
+        {
+          "topic": "Food Quality",
+          "topic_key": "food_quality",
+          "monthly_data": [
+            {
+              "month": "2025-01",
+              "frequency_pct": 54.5,
+              "mentions": 84,
+              "total_reviews": 154
+            },
+            {
+              "month": "2025-02",
+              "frequency_pct": 55.6,
+              "mentions": 80,
+              "total_reviews": 144
+            },
+            {
+              "month": "2025-03",
+              "frequency_pct": 50.6,
+              "mentions": 82,
+              "total_reviews": 162
+            }
+          ],
+          "total_mentions": 246
+        },
+        {
+          "topic": "Service",
+          "topic_key": "service",
+          "monthly_data": [
+            {
+              "month": "2025-01",
+              "frequency_pct": 25.3,
+              "mentions": 39,
+              "total_reviews": 154
+            },
+            {
+              "month": "2025-02",
+              "frequency_pct": 23.6,
+              "mentions": 34,
+              "total_reviews": 144
+            },
+            {
+              "month": "2025-03",
+              "frequency_pct": 30.2,
+              "mentions": 49,
+              "total_reviews": 162
+            }
+          ],
+          "total_mentions": 122
+        },
+        {
+          "topic": "Delivery",
+          "topic_key": "delivery",
+          "monthly_data": [
+            {
+              "month": "2025-01",
+              "frequency_pct": 3.2,
+              "mentions": 5,
+              "total_reviews": 154
+            },
+            {
+              "month": "2025-02",
+              "frequency_pct": 4.9,
+              "mentions": 7,
+              "total_reviews": 144
+            },
+            {
+              "month": "2025-03",
+              "frequency_pct": 12.3,
+              "mentions": 20,
+              "total_reviews": 162
+            }
+          ],
+          "total_mentions": 32
+        },
+        {
+          "topic": "Wait Time",
+          "topic_key": "wait_time",
+          "monthly_data": [
+            {
+              "month": "2025-01",
+              "frequency_pct": 14.3,
+              "mentions": 22,
+              "total_reviews": 154
+            },
+            {
+              "month": "2025-02",
+              "frequency_pct": 20.1,
+              "mentions": 29,
+              "total_reviews": 144
+            },
+            {
+              "month": "2025-03",
+              "frequency_pct": 29,
+              "mentions": 47,
+              "total_reviews": 162
+            }
+          ],
+          "total_mentions": 98
+        },
+        {
+          "topic": "Ambiance",
+          "topic_key": "ambiance",
+          "monthly_data": [
+            {
+              "month": "2025-01",
+              "frequency_pct": 5.8,
+              "mentions": 9,
+              "total_reviews": 154
+            },
+            {
+              "month": "2025-02",
+              "frequency_pct": 7.6,
+              "mentions": 11,
+              "total_reviews": 144
+            },
+            {
+              "month": "2025-03",
+              "frequency_pct": 1.2,
+              "mentions": 2,
+              "total_reviews": 162
+            }
+          ],
+          "total_mentions": 22
+        },
+        {
+          "topic": "Price",
+          "topic_key": "price",
+          "monthly_data": [
+            {
+              "month": "2025-01",
+              "frequency_pct": 5.8,
+              "mentions": 9,
+              "total_reviews": 154
+            },
+            {
+              "month": "2025-02",
+              "frequency_pct": 5.6,
+              "mentions": 8,
+              "total_reviews": 144
+            },
+            {
+              "month": "2025-03",
+              "frequency_pct": 3.1,
+              "mentions": 5,
+              "total_reviews": 162
+            }
+          ],
+          "total_mentions": 22
+        },
+        {
+          "topic": "Cleanliness",
+          "topic_key": "cleanliness",
+          "monthly_data": [
+            {
+              "month": "2025-01",
+              "frequency_pct": 0,
+              "mentions": 0,
+              "total_reviews": 154
+            },
+            {
+              "month": "2025-02",
+              "frequency_pct": 0,
+              "mentions": 0,
+              "total_reviews": 144
+            },
+            {
+              "month": "2025-03",
+              "frequency_pct": 0.6,
+              "mentions": 1,
+              "total_reviews": 162
+            }
+          ],
+          "total_mentions": 1
+        }
+      ],
+      "topic_sentiment": [
+        {
+          "topic": "Delivery",
+          "topic_key": "delivery",
+          "avg_sentiment": -0.437,
+          "overall_avg_sentiment": 0.334,
+          "sentiment_diff": -0.771,
+          "avg_rating": 1.81,
+          "sample_size": 32
+        },
+        {
+          "topic": "Wait Time",
+          "topic_key": "wait_time",
+          "avg_sentiment": -0.001,
+          "overall_avg_sentiment": 0.334,
+          "sentiment_diff": -0.335,
+          "avg_rating": 2.88,
+          "sample_size": 98
+        },
+        {
+          "topic": "Service",
+          "topic_key": "service",
+          "avg_sentiment": 0.169,
+          "overall_avg_sentiment": 0.334,
+          "sentiment_diff": -0.164,
+          "avg_rating": 3.56,
+          "sample_size": 122
+        },
+        {
+          "topic": "Price",
+          "topic_key": "price",
+          "avg_sentiment": 0.27,
+          "overall_avg_sentiment": 0.334,
+          "sentiment_diff": -0.064,
+          "avg_rating": 3.9,
+          "sample_size": 22
+        },
+        {
+          "topic": "Food Quality",
+          "topic_key": "food_quality",
+          "avg_sentiment": 0.452,
+          "overall_avg_sentiment": 0.334,
+          "sentiment_diff": 0.118,
+          "avg_rating": 3.97,
+          "sample_size": 246
+        },
+        {
+          "topic": "Ambiance",
+          "topic_key": "ambiance",
+          "avg_sentiment": 0.456,
+          "overall_avg_sentiment": 0.334,
+          "sentiment_diff": 0.122,
+          "avg_rating": 4.04,
+          "sample_size": 22
+        }
+      ],
+      "before_after": {
+        "change_detected": true,
+        "change_point": "2025-03",
+        "before_period": "2025-01 to 2025-02",
+        "after_period": "2025-03 to 2025-03",
+        "metrics": {
+          "rating": {
+            "before": 4.11,
+            "after": 3.09,
+            "change": -1.02,
+            "pct_change": -24.9
+          },
+          "sentiment": {
+            "before": 0.45,
+            "after": 0.12,
+            "change": -0.329,
+            "pct_change": -73.2
+          }
+        },
+        "sample_sizes": {
+          "before": 298,
+          "after": 162
+        },
+        "topic_changes": [
+          {
+            "topic": "Delivery",
+            "topic_key": "delivery",
+            "before_frequency_pct": 4,
+            "after_frequency_pct": 12.3,
+            "frequency_change_pct": 206.6,
+            "before_sentiment": -0.361,
+            "after_sentiment": -0.483,
+            "before_mentions": 12,
+            "after_mentions": 20
+          },
+          {
+            "topic": "Cleanliness",
+            "topic_key": "cleanliness",
+            "before_frequency_pct": 0,
+            "after_frequency_pct": 0.6,
+            "frequency_change_pct": 100,
+            "before_sentiment": 0,
+            "after_sentiment": -0.72,
+            "before_mentions": 0,
+            "after_mentions": 1
+          },
+          {
+            "topic": "Ambiance",
+            "topic_key": "ambiance",
+            "before_frequency_pct": 6.7,
+            "after_frequency_pct": 1.2,
+            "frequency_change_pct": -81.6,
+            "before_sentiment": 0.543,
+            "after_sentiment": -0.42,
+            "before_mentions": 20,
+            "after_mentions": 2
+          },
+          {
+            "topic": "Wait Time",
+            "topic_key": "wait_time",
+            "before_frequency_pct": 17.1,
+            "after_frequency_pct": 29,
+            "frequency_change_pct": 69.5,
+            "before_sentiment": 0.163,
+            "after_sentiment": -0.18,
+            "before_mentions": 51,
+            "after_mentions": 47
+          },
+          {
+            "topic": "Price",
+            "topic_key": "price",
+            "before_frequency_pct": 5.7,
+            "after_frequency_pct": 3.1,
+            "frequency_change_pct": -45.9,
+            "before_sentiment": 0.425,
+            "after_sentiment": -0.256,
+            "before_mentions": 17,
+            "after_mentions": 5
+          },
+          {
+            "topic": "Service",
+            "topic_key": "service",
+            "before_frequency_pct": 24.5,
+            "after_frequency_pct": 30.2,
+            "frequency_change_pct": 23.5,
+            "before_sentiment": 0.257,
+            "after_sentiment": 0.039,
+            "before_mentions": 73,
+            "after_mentions": 49
+          },
+          {
+            "topic": "Food Quality",
+            "topic_key": "food_quality",
+            "before_frequency_pct": 55,
+            "after_frequency_pct": 50.6,
+            "frequency_change_pct": -8,
+            "before_sentiment": 0.558,
+            "after_sentiment": 0.241,
+            "before_mentions": 164,
+            "after_mentions": 82
+          }
+        ]
+      },
+      "segment_comparisons": [
+        {
+          "segment_type": "visit_type",
+          "segment_label": "Visit Type",
+          "segments": [
+            {
+              "segment_value": "takeaway",
+              "avg_rating": 3.69,
+              "avg_sentiment": 0.307,
+              "count": 148,
+              "diff_from_overall": -0.07
+            },
+            {
+              "segment_value": "delivery",
+              "avg_rating": 3.72,
+              "avg_sentiment": 0.307,
+              "count": 161,
+              "diff_from_overall": -0.03
+            },
+            {
+              "segment_value": "dine-in",
+              "avg_rating": 3.85,
+              "avg_sentiment": 0.388,
+              "count": 151,
+              "diff_from_overall": 0.1
+            }
+          ]
+        },
+        {
+          "segment_type": "meal_type",
+          "segment_label": "Meal Type",
+          "segments": [
+            {
+              "segment_value": "breakfast",
+              "avg_rating": 3.72,
+              "avg_sentiment": 0.34,
+              "count": 150,
+              "diff_from_overall": -0.03
+            },
+            {
+              "segment_value": "lunch",
+              "avg_rating": 3.75,
+              "avg_sentiment": 0.322,
+              "count": 147,
+              "diff_from_overall": 0
+            },
+            {
+              "segment_value": "dinner",
+              "avg_rating": 3.78,
+              "avg_sentiment": 0.338,
+              "count": 163,
+              "diff_from_overall": 0.03
+            }
+          ]
+        },
+        {
+          "segment_type": "day_type",
+          "segment_label": "Day Type",
+          "segments": [
+            {
+              "segment_value": "Weekday",
+              "avg_rating": 3.77,
+              "avg_sentiment": 0.329,
+              "count": 336,
+              "diff_from_overall": 0.02
+            },
+            {
+              "segment_value": "Weekend",
+              "avg_rating": 3.7,
+              "avg_sentiment": 0.346,
+              "count": 124,
+              "diff_from_overall": -0.06
+            }
+          ]
+        }
+      ],
+      "anomalies": [],
+      "evidence": [
+        {
+          "id": "trend_rating_decline",
+          "type": "trend",
+          "title": "Rating Decline Detected",
+          "description": "Average rating declined from 4.19 to 3.09",
+          "metric": "average_rating",
+          "baseline": 4.19,
+          "current": 3.09,
+          "change": -1.1,
+          "pct_change": -26.3,
+          "sample_size": 460,
+          "confidence": "high",
+          "time_range": "2025-01 to 2025-03"
+        },
+        {
+          "id": "trend_sentiment_decline",
+          "type": "trend",
+          "title": "Sentiment Decline Detected",
+          "description": "Average sentiment shifted from 0.467 to 0.120",
+          "metric": "average_sentiment",
+          "baseline": 0.467,
+          "current": 0.12,
+          "change": -0.347,
+          "pct_change": -74.3,
+          "sample_size": 460,
+          "confidence": "high",
+          "time_range": "2025-01 to 2025-03"
+        },
+        {
+          "id": "topic_change_delivery",
+          "type": "topic_change",
+          "title": "Delivery Mentions Increased",
+          "description": "Delivery mentions increased by 207% after 2025-03",
+          "metric": "delivery_frequency",
+          "baseline": 4,
+          "current": 12.3,
+          "change": 8.3,
+          "pct_change": 206.6,
+          "sample_size": 32,
+          "confidence": "high",
+          "time_range": "Before: 2025-01 to 2025-02, After: 2025-03 to 2025-03"
+        },
+        {
+          "id": "topic_change_cleanliness",
+          "type": "topic_change",
+          "title": "Cleanliness Mentions Increased",
+          "description": "Cleanliness mentions increased by 100% after 2025-03",
+          "metric": "cleanliness_frequency",
+          "baseline": 0,
+          "current": 0.6,
+          "change": 0.6,
+          "pct_change": 100,
+          "sample_size": 1,
+          "confidence": "medium",
+          "time_range": "Before: 2025-01 to 2025-02, After: 2025-03 to 2025-03"
+        },
+        {
+          "id": "topic_change_ambiance",
+          "type": "topic_change",
+          "title": "Ambiance Mentions Decreased",
+          "description": "Ambiance mentions decreased by 82% after 2025-03",
+          "metric": "ambiance_frequency",
+          "baseline": 6.7,
+          "current": 1.2,
+          "change": -5.5,
+          "pct_change": -81.6,
+          "sample_size": 22,
+          "confidence": "high",
+          "time_range": "Before: 2025-01 to 2025-02, After: 2025-03 to 2025-03"
+        },
+        {
+          "id": "topic_change_wait_time",
+          "type": "topic_change",
+          "title": "Wait Time Mentions Increased",
+          "description": "Wait Time mentions increased by 70% after 2025-03",
+          "metric": "wait_time_frequency",
+          "baseline": 17.1,
+          "current": 29,
+          "change": 11.9,
+          "pct_change": 69.5,
+          "sample_size": 98,
+          "confidence": "high",
+          "time_range": "Before: 2025-01 to 2025-02, After: 2025-03 to 2025-03"
+        },
+        {
+          "id": "topic_change_price",
+          "type": "topic_change",
+          "title": "Price Mentions Decreased",
+          "description": "Price mentions decreased by 46% after 2025-03",
+          "metric": "price_frequency",
+          "baseline": 5.7,
+          "current": 3.1,
+          "change": -2.6,
+          "pct_change": -45.9,
+          "sample_size": 22,
+          "confidence": "high",
+          "time_range": "Before: 2025-01 to 2025-02, After: 2025-03 to 2025-03"
+        }
+      ],
+      "ai_insight": {
+        "what_changed": "There has been a significant decline in overall sentiment, primarily driven by a 187% spike in complaints regarding delivery and a 142% increase in wait-time complaints during the most recent period.",
+        "why_hypothesis": "The restaurant may be experiencing severe operational bottlenecks during peak hours, particularly on weekends. The simultaneous increase in both delivery issues and dine-in wait times suggests the kitchen or staff is struggling to handle combined order volumes.",
+        "evidence_citations": [
+          "Average rating declined from 4.2 to 3.8",
+          "Delivery mentions increased by 187% with negative sentiment",
+          "Wait-time mentions increased by 142% with negative sentiment",
+          "Weekend performance gap widened significantly compared to weekdays"
+        ],
+        "supporting_evidence": [
+          {
+            "metric": "Delivery frequency",
+            "detail": "Spiked from 12% to 34% of all reviews"
+          },
+          {
+            "metric": "Wait time sentiment",
+            "detail": "Dropped from -0.1 to -0.6 on average"
+          }
+        ],
+        "recommended_investigation": [
+          "Review kitchen ticket times during weekend peak hours (Friday/Saturday 6PM-9PM)",
+          "Compare staffing levels for delivery vs. dine-in coordination",
+          "Evaluate if third-party delivery tablets are overwhelming the kitchen capacity",
+          "Investigate packaging issues for delivery items causing 'cold food' complaints"
+        ],
+        "confidence_level": "high",
+        "disclaimer": "AI-generated hypothesis based on statistical text analysis. Not confirmed causation."
+      },
+      "is_demo": true,
+      "created_at": "2026-08-30T10:39:15.869Z"
+    }
+  }
+}

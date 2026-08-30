@@ -45,15 +45,28 @@ export async function POST(request: NextRequest) {
     
     // Check if python is available
     let pythonCmd = 'python';
+    const venvWin = path.join(process.cwd(), '.venv', 'Scripts', 'python.exe');
+    const venvNix = path.join(process.cwd(), '.venv', 'bin', 'python');
+    
     try {
-      await execAsync('python --version');
-    } catch (e) {
+      await fs.access(venvWin);
+      pythonCmd = `"${venvWin}"`;
+    } catch {
       try {
-        await execAsync('python3 --version');
-        pythonCmd = 'python3';
-      } catch (e2) {
-        console.error('Python not found on system.');
-        throw new Error('Python is not installed or available in PATH. The analytics pipeline requires Python.');
+        await fs.access(venvNix);
+        pythonCmd = `"${venvNix}"`;
+      } catch {
+        try {
+          await execAsync('python --version');
+        } catch (e) {
+          try {
+            await execAsync('python3 --version');
+            pythonCmd = 'python3';
+          } catch (e2) {
+            console.error('Python not found on system.');
+            throw new Error('Python is not installed or available in PATH. The analytics pipeline requires Python.');
+          }
+        }
       }
     }
 
