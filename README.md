@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SignalLens AI
 
-## Getting Started
+**"Find what changed. Understand why. Know what to investigate next."**
 
-First, run the development server:
+SignalLens AI is an AI-powered root-cause intelligence dashboard for restaurant owners and managers. Unlike simple review summarizers or sentiment dashboards, SignalLens AI focuses on **Temporal Root-Cause Investigation**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- **Temporal Analytics**: Automatically detects when satisfaction changes and isolates the specific time period.
+- **Topic Discovery & Segmentation**: Breaks down feedback into granular topics (food, service, delivery, wait time, etc.) to find exactly what is driving the change.
+- **AI Root-Cause Investigation**: Generates evidence-backed hypotheses and recommends specific operational investigations using Gemini.
+- **Privacy-First**: Automatically sanitizes personally identifiable information (PII) before processing.
+- **Demo Mode**: Built-in synthetic dataset with hidden patterns to demonstrate the analytics pipeline instantly without uploading data.
+
+## 🛠 Architecture & Tech Stack
+
+```
+Browser 
+  → Next.js Frontend (React, Tailwind CSS, Recharts)
+  → Next.js API Routes
+  → Privacy Preprocessor
+  → Python Data Science Pipeline (pandas, scikit-learn, TextBlob)
+  → Evidence JSON
+  → Gemini AI Analyst (Google AI Studio)
+  → Structured AI Result
+  → Local Storage
+  → Dashboard
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Frontend**: Next.js 15, React 19, Tailwind CSS v4, Recharts
+- **Backend**: Next.js API Routes (Serverless)
+- **Data Science**: Python 3, pandas, NumPy, scikit-learn, textblob
+- **AI**: Gemini 2.5 Flash
+- **Database**: Local Storage (in-memory)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Setup Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
+- Node.js >= 18
+- Python >= 3.8
 
-## Learn More
+### 1. Install Dependencies
+```bash
+# Install Node dependencies
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# Install Python dependencies for the analytics pipeline
+pip install -r analytics/requirements.txt
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Environment Variables
+Create a `.env.local` file in the root directory:
+```env
+# Required for AI insights
+GEMINI_API_KEY=your_gemini_api_key
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. Run Locally
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-## Deploy on Vercel
+## 🧪 Try the Demo
+Click the **"Try Demo Dataset"** button on the home page. The application will process a built-in synthetic dataset of ~500 reviews containing hidden patterns (e.g., a massive spike in delivery and wait-time complaints during weekends in March) and present the complete investigation dashboard.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔒 Security & Privacy
+- **No API Keys in Frontend**: All Gemini interactions happen server-side.
+- **PII Redaction**: Email addresses, phone numbers, and URLs are stripped before analysis.
+- **Prompt Injection Protection**: Review text is sanitized to prevent AI manipulation.
+- **Minimal Storage**: Raw reviews are not permanently stored—only aggregate metrics and insights are kept in local storage.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔮 Future Improvements
+- Support for more input formats (Yelp/Google My Business API integrations)
+- User authentication and multi-tenant isolation
+- Custom topic modeling via LLM (replacing keyword-based extraction)
+- Automated weekly report generation
