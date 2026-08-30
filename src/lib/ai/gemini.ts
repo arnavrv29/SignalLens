@@ -2,7 +2,7 @@ import { AIInsight, InvestigationResult, AnalysisResult } from '@/types';
 import { mockAiInsight, mockInvestigationResult } from './mock-results';
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent';
 
 export async function generateAnalysisInsight(evidenceData: Partial<AnalysisResult>, useMock = false): Promise<AIInsight> {
   if (useMock || !GEMINI_API_KEY) {
@@ -61,7 +61,7 @@ Respond ONLY with a valid JSON object matching exactly this structure, with no m
 
     const data = await response.json();
     const textResponse = data.candidates?.[0]?.content?.parts?.[0]?.text;
-    
+
     if (!textResponse) {
       throw new Error("Empty response from Gemini");
     }
@@ -82,7 +82,7 @@ Respond ONLY with a valid JSON object matching exactly this structure, with no m
 }
 
 export async function generateInvestigation(
-  analysisData: Partial<AnalysisResult>, 
+  analysisData: Partial<AnalysisResult>,
   topic: string,
   useMock = false
 ): Promise<InvestigationResult> {
@@ -144,7 +144,7 @@ Respond ONLY with a valid JSON object matching exactly this structure, with no m
 
     const data = await response.json();
     const textResponse = data.candidates?.[0]?.content?.parts?.[0]?.text;
-    
+
     try {
       const result = JSON.parse(textResponse) as InvestigationResult;
       return result;
