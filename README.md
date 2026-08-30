@@ -30,7 +30,7 @@ Browser
 - **Frontend**: Next.js 15, React 19, Tailwind CSS v4, Recharts
 - **Backend**: Next.js API Routes (Serverless)
 - **Data Science**: Python 3, pandas, NumPy, scikit-learn, textblob
-- **AI**: Gemini 2.5 Flash
+- **AI**: Gemini 3.6 Flash
 - **Database**: Local Storage (in-memory)
 
 ## 📦 Setup Instructions
